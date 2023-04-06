@@ -24,16 +24,16 @@ void BunicutaTest::TestareOrdineConstructoriSiDestructori() {
 }
 
 void BunicutaTest::TestareAfisare() {
-    Forma forma(2);
-    forma.Afisare();
+//    Forma forma(2);
+//    forma.Afisare();
 
     FormaPatrat patrat(3, 5);
     patrat.Afisare();
 }
 
 void BunicutaTest::TestUpcastingSiDowncasting() {
-    Forma *forma = new Forma(2);
-    forma -> Afisare();
+//    Forma *forma = new Forma(2);
+//    forma -> Afisare();
 
     //upcasting, retin o FormaPatrat intr-un pointer la Forma
     Forma *patrat = new FormaPatrat(3, 5);
@@ -49,7 +49,7 @@ void BunicutaTest::TestUpcastingSiDowncasting() {
     //daca vrem sa memoram toate formele bunicutei
     std::vector<Forma*> formeleBunicutei;
     //pt info despre vector: https://en.cppreference.com/w/cpp/container/vector
-    formeleBunicutei.push_back(forma);
+//    formeleBunicutei.push_back(forma);
     formeleBunicutei.push_back(patrat);
     for(int i = 0; i < formeleBunicutei.size(); i++) {
         formeleBunicutei[i] -> Afisare();
@@ -61,9 +61,9 @@ void BunicutaTest::TestUpcastingSiDowncasting() {
 }
 
 void BunicutaTest::TestOperatoriCitireSiAfisare() {
-    Forma forma(2);
-    std::cin >> forma;
-    std::cout << forma;
+//    Forma forma(2);
+//    std::cin >> forma;
+//    std::cout << forma;
 
     FormaPatrat patrat(3, 5);
     std::cin >> patrat;

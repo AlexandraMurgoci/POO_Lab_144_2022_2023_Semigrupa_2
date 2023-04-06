@@ -20,8 +20,8 @@ void FormaDreptunghi::Afisare(std::ostream& out) {
     out << "FormaDreptunghi: inaltime - " << inaltime << "; latura mica - " << laturaMica << "; latura mare - " << laturaMare <<  std::endl;
 }
 
-double FormaDreptunghi::CantitateGem() {
-    return 2 * inaltime * laturaMica * laturaMare;
+double FormaDreptunghi::ArieBaza() {
+    return laturaMica * laturaMare;
 }
 
 //operator citire

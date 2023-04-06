@@ -29,8 +29,13 @@ void Forma::Afisare() {
 double Forma::CantitateFrisca() {
     return 0;
 }
+
 double Forma::CantitateGem() {
-    return 0;
+    return 2 * Volum();
+}
+
+double Forma::Volum() {
+    return inaltime * ArieBaza();
 }
 
 std::istream& operator>>(std::istream& in, Forma& forma) {

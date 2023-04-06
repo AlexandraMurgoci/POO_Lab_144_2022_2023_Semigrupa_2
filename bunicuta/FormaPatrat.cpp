@@ -27,8 +27,8 @@ void FormaPatrat::Afisare() {
     Afisare(std::cout);
 }
 
-double FormaPatrat::CantitateGem() {
-    return 2 * inaltime * latura * latura;
+double FormaPatrat::ArieBaza() {
+    return latura * latura;
 }
 
 //operator citire
