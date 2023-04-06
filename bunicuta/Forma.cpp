@@ -1,6 +1,5 @@
 
 #include "Forma.h"
-#include <iostream>
 
 //constructori I (param si neparam)
 Forma::Forma(): inaltime(0) {
@@ -20,8 +19,11 @@ Forma::~Forma() {
 double Forma::GetInaltime() { return inaltime; }
 void Forma::SetInaltime(double inaltime) { this -> inaltime = inaltime; }
 
+void Forma::Afisare(std::ostream& out) {
+    out << "Forma: inaltime - " << inaltime << std::endl;
+}
 void Forma::Afisare() {
-    std::cout << "Forma: inaltime - " << inaltime << std::endl;
+    Afisare(std::cout);
 }
 
 double Forma::CantitateFrisca() {
@@ -29,4 +31,14 @@ double Forma::CantitateFrisca() {
 }
 double Forma::CantitateGem() {
     return 0;
+}
+
+std::istream& operator>>(std::istream& in, Forma& forma) {
+    in >> forma.inaltime;
+    return in;
+}
+
+std::ostream& operator<<(std::ostream& out, Forma& forma) {
+    forma.Afisare();
+    return out;
 }

@@ -1,0 +1,2 @@
+
+#include "FormaTriunghi.h"

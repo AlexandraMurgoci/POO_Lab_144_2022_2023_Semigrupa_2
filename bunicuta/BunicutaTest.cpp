@@ -60,9 +60,20 @@ void BunicutaTest::TestUpcastingSiDowncasting() {
     }
 }
 
+void BunicutaTest::TestOperatoriCitireSiAfisare() {
+    Forma forma(2);
+    std::cin >> forma;
+    std::cout << forma;
+
+    FormaPatrat patrat(3, 5);
+    std::cin >> patrat;
+    std::cout << patrat;
+}
+
 void BunicutaTest::Test() {
 //    TestareMetodeBaza();
 //    TestareOrdineConstructoriSiDestructori();
 //    TestareAfisare();
-    TestUpcastingSiDowncasting();
+//    TestUpcastingSiDowncasting();
+    TestOperatoriCitireSiAfisare();
 }

@@ -10,6 +10,7 @@ class BunicutaTest {
     void TestareOrdineConstructoriSiDestructori();
     void TestareAfisare();
     void TestUpcastingSiDowncasting();
+    void TestOperatoriCitireSiAfisare();
 public:
     void Test();
 };

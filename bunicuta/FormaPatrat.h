@@ -17,7 +17,13 @@ public:
     double GetLatura();
     void SetLatura(double latura);
 
+    void Afisare(std::ostream& out);
+    //TODO de ce nu mergea folosit din baza
     void Afisare();
+
+    double CantitateGem();
+
+    friend std::istream& operator>>(std::istream& in, FormaPatrat& patrat);
 };
 
 
